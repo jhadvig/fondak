@@ -1,0 +1,82 @@
+!!!
+%html
+	%head
+		%meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+		%title Fondak
+
+		= stylesheet_link_tag    "application"
+		= javascript_include_tag "application"
+		= csrf_meta_tags
+	%body
+
+		.container.hidden-xs
+
+			%nav.navbar.navbar-fixed-top{:role => "navigation"}
+				.container.title
+					.normal-header-title
+						Martinsky Fonendoskop XIIV.
+				.container.header
+					.navbar
+						%ul.nav.nav-pills.navbar-nav
+							%li.logo
+								= image_tag "logo2.png"
+							%li
+								= link_to "Úvod", root_path
+							%li
+								= link_to "Diskusia", root_path
+							%li
+								= link_to "Foto", root_path
+							%li
+								= link_to "História", root_path
+							%li
+								= link_to "Sponzory", root_path
+							%li
+								= link_to "Kontakt", root_path
+		.horizontal-ruler
+
+		/.countdown.styled
+
+		#owl-demo.owl-carousel.owl-theme
+
+			.item
+				= image_tag("carousel_photos/blank.png")
+			.item
+				= image_tag("carousel_photos/1.jpg", :class => "img-thumbnail")
+			.item
+				= image_tag("carousel_photos/2.jpg", :class => "img-thumbnail")
+			.item
+				= image_tag("carousel_photos/3.jpg", :class => "img-thumbnail")
+			.item
+				= image_tag("carousel_photos/4.jpg", :class => "img-thumbnail")
+			.item
+				= image_tag("carousel_photos/5.jpg", :class => "img-thumbnail")
+			.item
+				= image_tag("carousel_photos/6.jpg", :class => "img-thumbnail")
+			.item
+				= image_tag("carousel_photos/7.jpg", :class => "img-thumbnail")
+			.item
+				= image_tag("carousel_photos/8.jpg", :class => "img-thumbnail")
+			.item
+				= image_tag("carousel_photos/9.jpg", :class => "img-thumbnail")
+			.item
+				= image_tag("carousel_photos/10.jpg", :class => "img-thumbnail")
+			.item
+				= image_tag("carousel_photos/11.jpg", :class => "img-thumbnail")
+			.item
+				= image_tag("carousel_photos/12.jpg", :class => "img-thumbnail")
+			.item
+				= image_tag("carousel_photos/blank.png")
+
+		.horizontal-ruler2
+			%center.font-medium
+				Začíname za :
+		.horizontal-ruler3
+		%center
+			.countdown.styled
+
+		#footer
+			.container
+				%p.text-muted.credit
+					Developed by
+					%a{"href" => "mailto:j.hadvig@gmail.com"}
+						Jakub Hadvig

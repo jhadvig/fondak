@@ -1,0 +1,257 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@font-face {
+  font-family: lobster_bold_font;
+	src: url('lobster-bold-italic.ttf');
+}
+
+@font-face {
+	font-family: lobster_italic_font;
+	src: url('lobster-italic.ttf')
+}
+
+.font-medium {
+	font-size: 20px;
+	font-family: lobster_bold_font;
+	color: white;
+}
+
+.normal-header-title {
+  font-family: lobster_bold_font;
+  font-size: 74px;
+  color: #8e0018;
+  text-shadow:2px 2px white;
+}
+
+
+.normal-header-title {
+  position: relative;
+  left: 223px;
+  top: -10px;
+}
+
+.container.title {
+  height: 0px;
+  position: relative;
+}
+
+.normal-title {
+	font-family: lobster_bold_font;
+	font-size: 50px;
+	color: #e3330a;
+	text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+
+.mobile-title {
+	font-family: lobster_italic_font;
+	font-size: 22px;
+	color: #e3330a !important;
+	/*text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;*/
+}
+
+
+
+
+.navbar-default {
+	border-radius: 5px;
+	background-color: #e4cf7e;
+
+	.navbar-toggle{
+		border-color: #e3330a!important;
+	}
+	.icon-bar{
+		background-color: #e3330a!important;
+	}
+}
+
+/*@media only screen and (max-width: 400px) {
+	.main-title {
+		font-family: lobster_bold_font;
+		font-size: 20px;
+		color: #e3330a;
+		text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+	}
+}*/
+
+
+body {
+	/*background-color: #e3330a;*/
+	background-image: url('ground.jpg');
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+
+@media (min-width: 768px) {
+  .nav-justified {
+    max-height: 52px;
+  }
+  .nav-justified > li > a {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #d5d5d5;
+  }
+  .nav-justified > li:first-child > a {
+    border-left: 0;
+    border-radius: 5px 0 0 5px;
+  }
+  .nav-justified > li:last-child > a {
+    border-radius: 0 5px 5px 0;
+    border-right: 0;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+.container.header {
+  border-radius: 9px;
+  height: 50px;
+  padding: 0px;
+
+}
+
+
+.nav {
+  li {
+    padding-left: 15px;
+    font-family: lobster_italic_font;
+    font-size: 40px;
+    a{
+      margin-top: 30px;
+      color: #8e0018;
+      text-shadow:2px 1px white;
+    }
+    a:hover {
+      color: white;
+      text-shadow:2px 3px #8e0018;
+      background-color: transparent;
+    }
+  }
+}
+
+.navbar-nav > li > a {
+  margin-top: 90px;
+}
+
+.background {
+  background-color: rgba(238,238,238,0.65);
+}
+
+.navbar.navbar-fixed-top {
+  position: relative;
+}
+
+.horizontal-ruler {
+  width: 100%;
+  margin-top: -31px;
+  padding-top: 25px;
+  height: 30px;
+  background-color: rgba(142,0,24,0.75);
+}
+
+.horizontal-ruler2 {
+  width: 100%;
+  margin-top: -10px;
+  height: 30px;
+  background-color: rgba(142,0,24,0.75);
+}
+
+.horizontal-ruler3 {
+  width: 100%;
+  margin-top: 0px;
+  height: 30px;
+  background-color: white;
+  opacity: 0.75;
+}
+
+
+#owl-demo {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  background: rgba(238,238,238,0.65);
+  .item{
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    width: auto;
+    img {
+
+    }
+  }
+}
+
+/*.countdown.styled {
+  position: absolute;
+  top: 116px;
+  right: 10px;
+  color: white;
+  font-family: lobster_bold_font;
+}*/
+
+.countdown.styled {
+  position: relative;
+  color: white;
+  font-family: lobster_bold_font;
+  top: -25px;
+  span {
+  	font-size: 20px;
+  	color: #8e0018;
+  }
+}
+
+.full-width-container {
+  width: 100%;
+  height: 10px;
+  background: rgba(238,238,238,0.65);
+  position: relative;
+}
+
+#footer {
+  background-color: rgba(142,0,24,0.75);
+  font-family: lobster_italic_font;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.row {
+  margin: 0px;
+}
+
+.home-info {
+  background: rgba(238,238,238,0.65);
+  height: 100px;
+}
