@@ -22,6 +22,7 @@ $(window).ready(function(){
 
 function FONDAK_Init(){
 	$('.birthday').hide();
+	$('#footer').hide();
 
 	$('button.anet').on('click',function (e){
 		$(this).hide();
