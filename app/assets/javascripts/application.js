@@ -21,6 +21,14 @@ $(window).ready(function(){
 });
 
 function FONDAK_Init(){
+	$('.birthday').hide();
+
+	$('button.anet').on('click',function (e){
+		$(this).hide();
+		$('.icon-hand-right').hide();
+		$('.icon-hand-left').hide();
+		$('.birthday').slideDown();
+	});
 
 	var endDate = "March 28, 2014 12:00:00";
 	console.log("pipise");

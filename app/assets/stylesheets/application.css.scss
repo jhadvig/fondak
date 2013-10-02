@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require font-awesome
  *= require_tree .
  */
 
@@ -266,4 +267,24 @@ body {
 .home-info {
   background: rgba(238,238,238,0.65);
   height: 100px;
+}
+
+.birthday {
+	font-family: lobster_italic_font;
+	font-size: 35px;
+	color: white;
+	text-shadow:2px 1px black;
+	.icon-heart {
+		color: red;
+	}
+}
+
+.anet {
+	.click-button * {
+		display: inline;
+	}
+	.click-button .icon-hand-right,
+	.click-button .icon-hand-left {
+		color: white;
+	}
 }
