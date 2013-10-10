@@ -21,26 +21,15 @@ $(window).ready(function(){
 });
 
 function FONDAK_Init(){
-	$('.birthday').hide();
-	$('#footer').hide();
-
-	$('button.anet').on('click',function (e){
-		$(this).hide();
-		$('.icon-hand-right').hide();
-		$('.icon-hand-left').hide();
-		$('.birthday').slideDown();
-	});
+	// $('#footer').hide();
 
 	var endDate = "March 28, 2014 12:00:00";
 	console.log("pipise");
 
-	// $('.carousel').carousel({
-	// 	interval: 3000
-	// });
-
 	$("#owl-demo").owlCarousel({
     	// navigation : true
     	items: 3,
+    	itemsDesktopSmall:[1280,2],
     	autoPlay : 3000,
     	itemsMobile : false,
     	rewindSpeed: 1500,

@@ -1,7 +1,9 @@
 !!!
 %html
 	%head
+		%meta{:content => "width=device-width; initial-scale=1.0", :name => "viewport"}
 		%meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+
 		%title Fondak
 
 		= stylesheet_link_tag    "application"
@@ -15,8 +17,8 @@
 				.container.title
 					.normal-header-title
 						Martinský Fonendoskop
-					.normal-header-title.font-allan
-						XVIII.
+					/ .normal-header-title.font-allan
+					/ 	XVIII.
 				.container.header
 					.navbar
 						%ul.nav.nav-pills.navbar-nav
@@ -34,61 +36,12 @@
 								= link_to "Sponzori", root_path
 							%li
 								= link_to "Kontakt", root_path
-		.horizontal-ruler
 
-		#owl-demo.owl-carousel.owl-theme
-
-			.item
-				= image_tag("carousel_photos/blank.png")
-			.item
-				= image_tag("carousel_photos/1.jpg", :class => "img-thumbnail")
-			.item
-				= image_tag("carousel_photos/2.jpg", :class => "img-thumbnail")
-			.item
-				= image_tag("carousel_photos/3.jpg", :class => "img-thumbnail")
-			.item
-				= image_tag("carousel_photos/4.jpg", :class => "img-thumbnail")
-			.item
-				= image_tag("carousel_photos/5.jpg", :class => "img-thumbnail")
-			.item
-				= image_tag("carousel_photos/6.jpg", :class => "img-thumbnail")
-			.item
-				= image_tag("carousel_photos/7.jpg", :class => "img-thumbnail")
-			.item
-				= image_tag("carousel_photos/8.jpg", :class => "img-thumbnail")
-			.item
-				= image_tag("carousel_photos/9.jpg", :class => "img-thumbnail")
-			.item
-				= image_tag("carousel_photos/10.jpg", :class => "img-thumbnail")
-			.item
-				= image_tag("carousel_photos/11.jpg", :class => "img-thumbnail")
-			.item
-				= image_tag("carousel_photos/12.jpg", :class => "img-thumbnail")
-			.item
-				= image_tag("carousel_photos/blank.png")
-
-		.horizontal-ruler2
-			%center.font-medium
-				Začíname za :
-		.horizontal-ruler3
-		%center
-			.countdown.styled
-			.anet
-				.click-button
-					%i.icon-hand-right.icon-3x
-					.gift
-						= button_tag :class => "btn btn-danger btn-lg anet" do
-							%i.icon-gift.icon-3x
-					%i.icon-hand-left.icon-3x
-				.birthday
-					%i.icon-heart
-					Všetko najlepšie Anetka
-					%i.icon-heart
-
+		= yield
 
 		#footer
 			.container
 				%p.text-muted.credit
-					Developed by
+					Designed & Developed by
 					%a{"href" => "mailto:j.hadvig@gmail.com"}
 						Jakub Hadvig

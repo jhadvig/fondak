@@ -74,7 +74,30 @@
 	/*text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;*/
 }
 
+.header-medal{
+	position: absolute;
+  top: 0%;
+  left: 50%;
+  padding-left: 454px;
+  .medal{
 
+  }
+}
+
+.header-medal-year{
+	position: absolute;
+  top: 0%;
+  left: 50%;
+  padding-left: 454px;
+  .year{
+		font-family: allan;
+		font-size: 38px;
+		color: #fee253;
+		text-shadow: 4px 0px #6b5118;
+		padding-left: 25px;
+		padding-top: 62px;
+  }
+}
 
 
 .navbar-default {
@@ -157,7 +180,6 @@ body {
 
 .nav {
   li {
-    padding-left: 15px;
     font-family: lobster_italic_font;
     font-size: 40px;
     a{
@@ -169,6 +191,9 @@ body {
       color: white;
       text-shadow:2px 3px #8e0018;
       background-color: transparent;
+    }
+    &:not(.logo) {
+    	margin-left: -9px;
     }
   }
 }
@@ -255,8 +280,8 @@ body {
 #footer {
   background-color: rgba(142,0,24,0.75);
   font-family: lobster_italic_font;
-  position: absolute;
-  bottom: 0px;
+	position: fixed;
+	bottom: 0px;
   width: 100%;
 }
 
@@ -267,24 +292,4 @@ body {
 .home-info {
   background: rgba(238,238,238,0.65);
   height: 100px;
-}
-
-.birthday {
-	font-family: lobster_italic_font;
-	font-size: 35px;
-	color: white;
-	text-shadow:2px 1px black;
-	.icon-heart {
-		color: red;
-	}
-}
-
-.anet {
-	.click-button * {
-		display: inline;
-	}
-	.click-button .icon-hand-right,
-	.click-button .icon-hand-left {
-		color: white;
-	}
 }
