@@ -14,6 +14,9 @@
 //= require jquery_ujs
 //= require_tree .
 
+$(window).load(function() {
+  $(".loader").fadeOut("slow");
+})
 
 $(window).ready(function(){
 	FONDAK_Init();
@@ -23,7 +26,7 @@ $(window).ready(function(){
 function FONDAK_Init(){
 	// $('#footer').hide();
 
-	var endDate = "March 28, 2014 12:00:00";
+	var endDate = "April 25, 2014 12:00:00";
 	console.log("pipise");
 
 	$("#owl-demo").owlCarousel({

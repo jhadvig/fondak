@@ -10,6 +10,8 @@
 		= javascript_include_tag "application"
 		= csrf_meta_tags
 	%body
+		.loader
+			= image_tag "logo2.png", :class => "loader-logo"
 
 		.container.hidden-xs
 
@@ -17,8 +19,6 @@
 				.container.title
 					.normal-header-title
 						Martinský Fonendoskop
-					/ .normal-header-title.font-allan
-					/ 	XVIII.
 				.container.header
 					.navbar
 						%ul.nav.nav-pills.navbar-nav
