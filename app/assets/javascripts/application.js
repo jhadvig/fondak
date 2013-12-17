@@ -36,7 +36,7 @@ function FONDAK_Init(){
     	autoPlay : 3000,
     	itemsMobile : false,
     	rewindSpeed: 1500,
-    	stopOnHover: true,
+    	stopOnHover: false,
   	});
 
   	$('.countdown.styled').countdown({
