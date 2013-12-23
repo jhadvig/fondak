@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: lobster_bold_font;
-	src: url('lobster-bold-italic.ttf');
+	src: url('lobster-bold-italic-custom.ttf');
 }
 
 @font-face {
@@ -312,4 +312,40 @@ body {
    margin-top: -68px;
    width: 178px;
    margin-left: -89px;
+}
+
+.contacts-container {
+  padding: 10px;
+  margin-top:10px;
+
+  .col-lg-4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2a6496;
+
+    .person-image {
+      background-color: rgba(66, 136, 202, 0.7);
+      border-radius: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .person-info {
+      background-color: rgba(235, 255, 240, 0.4);
+      border-radius: 12px;
+
+      .name {
+        padding-top: 15px;
+        font-family: lobster_bold_font;
+        text-shadow: 1px 1px white;
+      }
+      p {
+        font-size: 20px;
+        font-family: lobster_italic_font;
+        text-shadow: 1px 1px white;
+        &.mail {
+          padding-bottom:10px;
+        }
+      }
+    }
+  }
 }

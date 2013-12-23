@@ -26,15 +26,20 @@
 							%li
 								= link_to "Úvod", root_path
 							%li
-								= link_to "Diskusia", root_path
+								= link_to "Diskusia", discusion_path
 							%li
-								= link_to "Foto", root_path
+								= link_to "Foto", photo_path
 							%li
-								= link_to "História", root_path
+								= link_to "História", history_path
 							%li
-								= link_to "Sponzori", root_path
+								= link_to "Sponzori", sponsores_path
 							%li
-								= link_to "Kontakt", root_path
+								= link_to "Kontakt", contact_path
+
+		.header-medal
+			= image_tag "medal.png", :class =>"medal"
+		.header-medal-year
+			.year XVIII.
 
 		= yield
 
