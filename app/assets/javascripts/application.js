@@ -36,10 +36,12 @@ function FONDAK_Init(){
       }, 300);
   });
 
-  $('#fade.first').cycle({speed: 300, pause: 1});
-  $('#fade.second').cycle({speed: 400, pause: 2});
-  $('#fade.third').cycle({speed: 500, pause: 1});
-  $('#fade.forth').cycle({speed: 350, pause: 2});
+  $('#fade.first').cycle({speed: 550, pause: 1});
+  $('#fade.second').cycle({speed: 750, pause: 2});
+  $('#fade.third').cycle({speed: 600, pause: 1});
+  $('#fade.forth').cycle({speed: 650, pause: 2});
+
+
 
 	var endDate = "April 25, 2014 12:00:00";
 

@@ -230,7 +230,6 @@ body {
 
 .horizontal-ruler2 {
   width: 100%;
-  margin-top: -10px;
   height: 30px;
   background-color: rgba(142,0,24,0.75);
 }
@@ -252,8 +251,7 @@ body {
 
 
 #owl-demo {
-  margin-bottom: 10px;
-  padding-top: 10px;
+  /*padding-top: 10px;*/
   background: rgba(238,238,238,0.65);
   .item{
     color: #FFF;
@@ -471,6 +469,7 @@ body {
       padding: 15px;
       font-size: 18px;
       font-family: Cardo, serif;
+      color: #2a6496;
     }
   }
   .text-first {
@@ -485,5 +484,24 @@ body {
   .text-forth {
     height: 212px;
   }
-
 }
+
+.outer-main-container {
+  background-color: rgba(238, 238, 238, 0.65);
+
+  .text-main {
+    font-family: lobster_bold_font;
+    font-size: 19px;
+    text-align: center;
+    text-shadow: 1px 1px white;
+    color: rgba(142, 0, 24, 1);
+  }
+}
+
+.photo {
+  padding-top:30px;
+  .heapshot {
+    text-align: center;
+  }
+}
+
