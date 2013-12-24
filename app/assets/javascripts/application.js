@@ -27,12 +27,12 @@ function FONDAK_Init(){
 
   $(".header-facebook").mouseover(function(){
       $(this).animate({
-          "left" : "5px"
+          "left" : "0px"
       }, 300);
       console.log("pipise");
   }).mouseout(function(){
       $(this).animate({
-          "left" : "-44px"
+          "left" : "-20px"
       }, 300);
   });
 
