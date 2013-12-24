@@ -449,7 +449,8 @@ body {
   p.title {
     font-family: lobster_bold_font;
     font-size: 35px;
-    color: #fdfdfd;
+    color: #2a6496;
+    text-shadow: 1px 1px #fdfdfd;
   }
   img {
     border:5px solid rgba(235, 255, 240, 0.5);
@@ -468,8 +469,9 @@ body {
     p {
       padding: 15px;
       font-size: 18px;
-      font-family: Cardo, serif;
+      font-family: 'Crimson Text', serif;
       color: #2a6496;
+      text-shadow: 1px 1px white;
     }
   }
   .text-first {
