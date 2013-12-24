@@ -6,6 +6,7 @@
 		%title Fondak
 		= favicon_link_tag 'favicon.png'
 		= stylesheet_link_tag    "application"
+		%link{:href => "http://fonts.googleapis.com/css?family=Cardo&subset=latin", :rel => "stylesheet", :type => "text/css"}
 		= javascript_include_tag "application"
 		= csrf_meta_tags
 	%body
@@ -24,28 +25,33 @@
 							%li.logo
 								= image_tag "logo2.png"
 							%li
-								= link_to "Úvod", root_path
+								= link_to "Úvod", root_path, :class => ( params[:action] == "index" ? "current" : "" )
 							%li
-								= link_to "Diskusia", discusion_path
+								= link_to "Diskusia", discusion_path, :class => ( params[:action] == "discusion" ? "current" : "" )
 							%li
-								= link_to "Foto", photo_path
+								= link_to "Foto", photo_path, :class => ( params[:action] == "photo" ? "current" : "" )
 							%li
-								= link_to "História", history_path
+								= link_to "História", history_path, :class => ( params[:action] == "history" ? "current" : "" )
 							%li
-								= link_to "Sponzori", sponsores_path
+								= link_to "Sponzori", sponsores_path, :class => ( params[:action] == "sponsores" ? "current" : "" )
 							%li
-								= link_to "Kontakt", contact_path
+								= link_to "Kontakt", contact_path, :class => ( params[:action] == "contact" ? "current" : "" )
 
 		.header-medal
 			= image_tag "medal.png", :class =>"medal"
+
 		.header-medal-year
 			.year XVIII.
 
+		.header-facebook
+			= link_to "https://www.facebook.com/pages/Martinsk%C3%BD-Fonendoskop/210205029166643?fref=ts" do
+				= image_tag "facebook.png", :class => "facebook"
+		.horizontal-ruler
 		= yield
 
-		#footer
-			.container
-				%p.text-muted.credit
-					Designed & Developed by
-					%a{"href" => "mailto:j.hadvig@gmail.com"}
-						Jakub Hadvig
+		/ #footer
+		/ 	.container
+		/ 		%p.text-muted.credit
+		/ 			Designed & Developed by
+		/ 			%a{"href" => "mailto:j.hadvig@gmail.com"}
+		/ 				Jakub Hadvig

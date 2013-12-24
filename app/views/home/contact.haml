@@ -1,35 +1,69 @@
-.container.contacts-container
+
+.container.main-organizators
+	.row.title
+		.col-xs-6.col-sm-4.col-xs-offset-6.col-sm-offset-4
+			.first-title
+				Hlavný organizátory
+	.row.first_contacts
+		.col-xs-10.col-sm-6
+			.contacs
+				.person-image
+					= image_tag "anetka.jpg", :class => "img-circle"
+				.person-info
+					.info-wrapper
+						%h1.name Aneta Dikaszová
+						%p.phone
+							%b Tel:
+							+421 0908 200 059
+						%p.mail
+							%b Mail:
+							aneta.dikaszova@gmail.com
+		.col-xs-10.col-sm-6
+			.contacs
+				.person-image
+					= image_tag "andrea.jpg", :class => "img-circle"
+				.person-info
+					.info-wrapper
+						%h1.name Andrea Váňová
+						%p.phone
+							%b Tel:
+							+421 0907 277 610
+						%p.mail
+							%b Mail:
+							vanova_andrea@yahoo.com
+	.row.second_contacts
+		.col-xs-10.col-sm-6.col-xs-offset-4.col-sm-offset-3
+			.contacs
+				.person-image
+					= image_tag "tomas.jpg", :class => "img-circle"
+				.person-info
+					.info-wrapper
+						%h1.name Tomáš Jančok
+						%p.phone
+							%b Tel:
+							+421 0903 862 480
+						%p.mail
+							%b Mail:
+							tomaskojancok@centrum.sk
+
+.horizontal-ruler4
+
+.container.other-organizators
+	.row.title
+		.col-xs-6.col-sm-4.col-xs-offset-6.col-sm-offset-4
+			.second-title
+				Organizátory
 	.row
-		.col-lg-4
-			.person-image
-				= image_tag "person-image.png", :class => "img-circle"
-			.person-info
-				%h2.name Aneta Dikaszová
-				%p.phone
-					%b Tel:
-					+421 0903 432 234
-				%p.mail
-					%b Mail:
-					mail@fondak.sk
-		.col-lg-4
-			.person-image
-				= image_tag "person-image.png", :class => "img-circle"
-			.person-info
-				%h2.name Andrea Váňová
-				%p.phone
-					%b Tel:
-					+421 0903 432 234
-				%p.mail
-					%b Mail:
-					mail@fondak.sk
-		.col-lg-4
-			.person-image
-				= image_tag "person-image.png", :class => "img-circle"
-			.person-info
-				%h2.name Tomáš Jančok
-				%p.phone
-					%b Tel:
-					+421 0903 432 234
-				%p.mail
-					%b Mail:
-					mail@fondak.sk
+		.col-xs-6.col-sm-4
+			.first-column
+				%p Anna Bobulová
+				%p Radoslav Hanzel
+		.col-xs-6.col-sm-4
+			.second-column
+				%p Katarína Ivanišová
+				%p Jozef Hudec
+		.col-xs-6.col-sm-4
+			.third-column
+				%p Danuša Polláková
+				%p Jakub Franek
+
