@@ -36,6 +36,14 @@ function FONDAK_Init(){
       }, 300);
   });
 
+  $(".fancybox").fancybox();
+
+  $('[data-toggle=tab]').click(function(){
+    if ($(this).parent().hasClass('active')){
+      $($(this).attr("href")).toggleClass('active');
+    }
+  })
+
   $('#fade.first').cycle({speed: 550, pause: 1});
   $('#fade.second').cycle({speed: 750, pause: 2});
   $('#fade.third').cycle({speed: 600, pause: 1});

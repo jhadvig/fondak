@@ -501,9 +501,36 @@ body {
 }
 
 .photo {
-  padding-top:30px;
-  .heapshot {
-    text-align: center;
+  .first {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+  .last {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  img {
+    border: 6px solid black;
+    margin-bottom: 18px;
+    border-radius: 5px;
+  }
+
+  #myTab {
+    border: 0px;
+    li.active a {
+      background-color: transparent;
+      color: #2a6496;
+      text-shadow: 1px 1px white;
+      border: 0px;
+    }
+    li a {
+      margin-top: 0px;
+      &:hover {
+        border: 0px;
+      }
+    }
   }
 }
+
 
